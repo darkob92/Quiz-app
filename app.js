@@ -15,10 +15,12 @@ form.addEventListener('submit', e => {
     }
   });
 
-  // show result on page 
+  // show result on page and scroll to the top
   scrollTo(0,0);
   result.classList.remove('d-none');
 
+
+  // animating score
   let output = 0;
   const timer = setInterval(() => {
     result.querySelector('span').textContent = `${output}%`;
